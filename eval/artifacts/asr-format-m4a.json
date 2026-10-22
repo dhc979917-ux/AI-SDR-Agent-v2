@@ -1,0 +1,14 @@
+{
+  "filename": "合成通话_转写验证.m4a",
+  "sha256": "177b3ec9539e4630fcc62cd2c87e9fbf0624884197188b60dc3f4f31a6d1490f",
+  "duration": 17.152,
+  "data_mode": "synthetic",
+  "mime": "audio/mp4",
+  "text": "您好，我是酷家乐的销售，想了解一下您的设计需求。我们最近出图比较慢，希望下周试用一下软件。好的，我给您安排产品演示，可以周三下午两点我们一起参加。",
+  "provider": {
+    "model": "qwen3-asr-flash",
+    "tokens": 476,
+    "speaker_roles": "manual_confirmation_required"
+  },
+  "elapsed_ms": 2297
+}

@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "tests": 54,
+  "rules_regression": "12/12",
+  "asr_formats_live": [
+    "wav",
+    "m4a"
+  ],
+  "browser_checks": [
+    "管理员与员工登录",
+    "界面创建两个员工账号",
+    "客户档案创建",
+    "转交客户后原员工列表清空",
+    "新员工可见原录音和分析",
+    "校对确认后进入规则分析",
+    "审核状态分组与不同颜色",
+    "音频上传无效文件阻断"
+  ],
+  "responsive": {
+    "desktop_width": 1360,
+    "mobile_width": 359,
+    "document_width": 359,
+    "checked": [
+      "登录页",
+      "录音上传",
+      "录音校对",
+      "审核队列"
+    ]
+  },
+  "console_errors_after_final_reload": [],
+  "audio_upload_note": "浏览器文件选择与无效文件校验已验证；有效WAV经受保护HTTP上传接口联调，校对与分析通过浏览器完成。",
+  "limits": [
+    "单团队单实例",
+    "音频最多10MB/5分钟",
+    "销售与客户身份需要人工校对",
+    "真实语音测试仅合成数据"
+  ]
+}

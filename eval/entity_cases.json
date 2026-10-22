@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ENTITY-01",
+    "query": "木里木外",
+    "area": "浙江省杭州市",
+    "industry": "全屋定制",
+    "expected": "木里木外家具启东有限公司",
+    "type": "brand",
+    "note": "品牌简称；客户口述地区与候选注册地不一致，预期人工确认"
+  },
+  {
+    "id": "ENTITY-02",
+    "query": "七木定制",
+    "area": "浙江省杭州市",
+    "industry": "全屋定制",
+    "expected": "六安七木定制家居有限公司",
+    "type": "homophone_brand",
+    "note": "同音/近似品牌；候选在安徽六安，不应自动确认"
+  },
+  {
+    "id": "ENTITY-03",
+    "query": "木里木外家具启东有限公司",
+    "area": "江苏省南通市",
+    "industry": "家具制造",
+    "expected": "木里木外家具启东有限公司",
+    "type": "full_name",
+    "note": "完整企业全称"
+  },
+  {
+    "id": "ENTITY-04",
+    "query": "青禾空间设计（杭州）有限公司",
+    "area": "浙江省杭州市",
+    "industry": "全屋定制",
+    "expected": "杭州青禾空间设计有限公司",
+    "type": "full_name_variant",
+    "note": "括号与语序差异；候选为真实主体，合成样例仅用于演示"
+  },
+  {
+    "id": "ENTITY-05",
+    "query": "上海木里实业发展有限公司",
+    "area": "上海市",
+    "industry": "其他",
+    "expected": "上海木里实业发展有限公司",
+    "type": "full_name",
+    "note": "同名品牌下的另一主体，验证候选区分"
+  },
+  {
+    "id": "ENTITY-06",
+    "query": "酷家乐",
+    "area": "浙江省杭州市",
+    "industry": "其他",
+    "expected": "杭州群核信息技术有限公司",
+    "type": "brand",
+    "note": "品牌简称；同时存在多个含品牌词的主体"
+  },
+  {
+    "id": "ENTITY-07",
+    "query": "不存在品牌XYZ123",
+    "area": "浙江省杭州市",
+    "industry": "全屋定制",
+    "expected": null,
+    "type": "no_match",
+    "note": "应保留原话，不编造主体"
+  }
+]

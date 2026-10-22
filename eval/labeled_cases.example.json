@@ -1,0 +1,71 @@
+[
+  {
+    "id": "LBL-EX-01",
+    "title": "题目样例 · 木里木外",
+    "data_mode": "synthetic",
+    "transcript": "销售：您好，请问是张总吗？我是酷家乐的小王。\n客户：是的，你讲。\n销售：上次您在我们官网留了信息，想了解企业版设计软件，今天想跟您确认一下需求。\n客户：对，我们这边是杭州那边一个做全屋定制的，叫“木里木外”，不知道你们听过没有。\n销售：了解的，木里木外是高定品牌。那您这边大概多少人用？主要想解决什么问题？\n客户：设计部大概 15 个人，现在用的是别的软件，出图慢，而且跟工厂对接经常出错。\n销售：明白，那我们企业版可以支持参数化设计，一键出图，还能对接生产。您大概什么时候想上线？\n客户：最好下个月就能试一下，预算的话，一年几万块我们能接受。\n销售：好的张总，我加您微信，把方案发您。\n客户：行，你加这个手机号就行，138xxxx1234。",
+    "expected": {
+      "call_type": "sales",
+      "intent_level": "high",
+      "do_not_contact": false,
+      "entity_name": null,
+      "fields": {
+        "raw_company": "木里木外",
+        "contact_name": "张总",
+        "area": "浙江省杭州市",
+        "phone": "138xxxx1234",
+        "shejishi": null
+      }
+    },
+    "note": "合成示例行：演示标注口径。设计部 15 人不代填设计师人数，shejishi 标注为 null 表示“未知应为空”。"
+  },
+  {
+    "id": "LBL-EX-02",
+    "title": "完整主体 · 明确试用",
+    "data_mode": "synthetic",
+    "transcript": "销售：您好，请介绍一下您这边的情况。\n客户：我们公司全称是青禾空间设计（杭州）有限公司，在杭州做全屋定制。我叫陈宇，我是设计总监，设计师有12人。\n销售：主要有什么需求？\n客户：出图慢，跟工厂对接经常出错，希望改善设计和生产对接。下周想试用，预算一年五万可以接受。\n销售：周三下午两点，我给您和采购经理一起做演示，可以吗？\n客户：确认，就定周三下午两点，我和采购经理一起参加演示。手机号13800000000，你加我微信。",
+    "expected": {
+      "call_type": "sales",
+      "intent_level": "high",
+      "do_not_contact": false,
+      "entity_name": null,
+      "fields": {
+        "raw_company": "青禾空间设计（杭州）有限公司",
+        "contact_name": "陈宇",
+        "contact_title": "设计总监",
+        "shejishi": 12,
+        "phone": "13800000000",
+        "industry": "全屋定制"
+      }
+    },
+    "note": "合成示例行：演示字段覆盖与口径（职位以自述为准）。"
+  },
+  {
+    "id": "LBL-EX-03",
+    "title": "随便了解 · 暂无计划",
+    "data_mode": "synthetic",
+    "transcript": "销售：您是想了解设计软件吗？\n客户：我只是随便问问，先了解一下，没有预算，也没有计划，不用发资料了。",
+    "expected": {
+      "call_type": "sales",
+      "intent_level": "low",
+      "do_not_contact": false,
+      "entity_name": null,
+      "fields": {}
+    },
+    "note": "合成示例行：低意向，不把礼貌回答当作采购意愿。"
+  },
+  {
+    "id": "LBL-EX-04",
+    "title": "明确拒绝再次联系",
+    "data_mode": "synthetic",
+    "transcript": "销售：您好，想再跟您介绍一下企业版。\n客户：我们不需要，请不要再联系我，也不要发营销信息。",
+    "expected": {
+      "call_type": "sales",
+      "intent_level": "low",
+      "do_not_contact": true,
+      "entity_name": null,
+      "fields": {}
+    },
+    "note": "合成示例行：拒联优先，用于评测拒联漏判。"
+  }
+]

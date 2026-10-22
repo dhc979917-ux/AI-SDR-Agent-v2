@@ -1,0 +1,14 @@
+[
+ {"id":"E01","split":"synthetic_regression","slice":"high","expected":"high","text":"销售：您有什么需求？\n客户：我们在成都做整装，出图慢，返工很多。下个月希望试用，预算一年六万可以接受。你加我微信，139xxxx1111。"},
+ {"id":"E02","split":"synthetic_regression","slice":"medium","expected":"medium","text":"销售：想了解什么？\n客户：现在软件不好用，功能不够，没有计划马上更换，预算一年两万。你加我微信，138xxxx5555。"},
+ {"id":"E03","split":"synthetic_regression","slice":"low","expected":"low","text":"销售：现在考虑软件吗？\n客户：随便问问，只是了解一下，没有计划，没有预算。"},
+ {"id":"E04","split":"synthetic_regression","slice":"refusal","expected":"low","text":"销售：需要再安排演示吗？\n客户：不买了，先不试了，取消试用。"},
+ {"id":"E05","split":"synthetic_regression","slice":"dnc","expected":"low","do_not_contact":true,"text":"销售：想和您介绍方案。\n客户：别再打电话，请不要再联系我。"},
+ {"id":"E06","split":"synthetic_regression","slice":"unknown","expected":null,"text":"销售：时间和资金有安排吗？\n客户：预算还没批，什么时候也说不准，如果免费才考虑。"},
+ {"id":"E07","split":"synthetic_regression","slice":"service","expected":null,"text":"销售：你好。\n客户：我们买过了，账号无法登录，请售后处理。"},
+ {"id":"E08","split":"synthetic_regression","slice":"competitor","expected":"high","text":"销售：是不是已经用了其他软件？\n客户：是，但是出图慢，生产对接经常出错。下周想试用，预算一年四万，价格能接受。你加我微信吧，139xxxx1112。"},
+ {"id":"E09","split":"synthetic_regression","slice":"department","expected":"low","designers":7,"text":"销售：你们多少设计师？\n客户：设计部大概20个人，其中设计师7人。只是了解一下。"},
+ {"id":"E10","split":"synthetic_regression","slice":"unknown","expected":null,"text":"销售：您这边的情况是？\n客户：我们做全屋定制，别的信息现在不方便说。"},
+ {"id":"E11","split":"synthetic_regression","slice":"medium","expected":"medium","text":"销售：具体什么时候用？\n客户：软件不好用，操作复杂，明年再说，愿意付费但价格没讨论。随便问问。"},
+ {"id":"E12","split":"synthetic_regression","slice":"sales_claim","expected":null,"text":"销售：我是总经理，我的手机号13912345678，我们有30名设计师，支持参数化和生产对接。\n客户：谢谢。"}
+]

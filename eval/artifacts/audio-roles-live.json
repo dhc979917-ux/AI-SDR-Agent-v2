@@ -1,0 +1,96 @@
+{
+  "data_mode": "synthetic",
+  "model": "qwen-plus",
+  "source": "您好，请问是陈经理吗？我是酷家乐的小李。是的，你讲。您之前留了试用信息，我想了解一下团队需求。我们是杭州星河家居工作室，做全屋定制。设计部有8个人，出图有点慢。明白，您大概什么时候想开始试用？最好下个月，预算一年3万元左右。我们可以安排产品演示。我加您微信，把试用资料发给您。好的，您发过来，我看一下。",
+  "result": {
+    "turns": [
+      {
+        "role": "sales",
+        "text": "您好，请问是陈经理吗？我是酷家乐的小李。",
+        "certainty": "clear",
+        "note": "",
+        "source_start": 0,
+        "source_end": 20,
+        "id": "R001"
+      },
+      {
+        "role": "customer",
+        "text": "是的，你讲。",
+        "certainty": "clear",
+        "note": "",
+        "source_start": 20,
+        "source_end": 26,
+        "id": "R002"
+      },
+      {
+        "role": "sales",
+        "text": "您之前留了试用信息，我想了解一下团队需求。",
+        "certainty": "clear",
+        "note": "",
+        "source_start": 26,
+        "source_end": 47,
+        "id": "R003"
+      },
+      {
+        "role": "customer",
+        "text": "我们是杭州星河家居工作室，做全屋定制。设计部有8个人，出图有点慢。",
+        "certainty": "clear",
+        "note": "",
+        "source_start": 47,
+        "source_end": 80,
+        "id": "R004"
+      },
+      {
+        "role": "sales",
+        "text": "明白，您大概什么时候想开始试用？",
+        "certainty": "clear",
+        "note": "",
+        "source_start": 80,
+        "source_end": 96,
+        "id": "R005"
+      },
+      {
+        "role": "customer",
+        "text": "最好下个月，预算一年3万元左右。",
+        "certainty": "clear",
+        "note": "",
+        "source_start": 96,
+        "source_end": 112,
+        "id": "R006"
+      },
+      {
+        "role": "sales",
+        "text": "我们可以安排产品演示。我加您微信，把试用资料发给您。",
+        "certainty": "clear",
+        "note": "",
+        "source_start": 112,
+        "source_end": 138,
+        "id": "R007"
+      },
+      {
+        "role": "customer",
+        "text": "好的，您发过来，我看一下。",
+        "certainty": "clear",
+        "note": "",
+        "source_start": 138,
+        "source_end": 151,
+        "id": "R008"
+      }
+    ],
+    "transcript": "销售：您好，请问是陈经理吗？我是酷家乐的小李。\n客户：是的，你讲。\n销售：您之前留了试用信息，我想了解一下团队需求。\n客户：我们是杭州星河家居工作室，做全屋定制。设计部有8个人，出图有点慢。\n销售：明白，您大概什么时候想开始试用？\n客户：最好下个月，预算一年3万元左右。\n销售：我们可以安排产品演示。我加您微信，把试用资料发给您。\n客户：好的，您发过来，我看一下。",
+    "uncertain_count": 0,
+    "method": "text_context",
+    "model": "qwen-plus",
+    "source_sha256": "52896a9e8a56afd22a30a4aa22667fe12edc9d38b7208f5a6053c33ae0660c0c",
+    "prompt_version": "audio-roles-v1",
+    "prompt_hash": "bde617397afc",
+    "tokens": 945,
+    "completed_chunks": 1,
+    "total_chunks": 1,
+    "elapsed_ms": 6583
+  },
+  "matched_role_characters": 151,
+  "total_characters": 151,
+  "wrong_role_characters": 0,
+  "scope": "固定合成对话，不代表真实电话声纹分离准确率。"
+}

@@ -1,0 +1,265 @@
+{
+  "kind": "real_llm_integration_check_on_demo_data",
+  "created_at": "2026-10-19T17:55:13+00:00",
+  "results": [
+    {
+      "sample": "verified",
+      "status": "completed",
+      "error": null,
+      "intent": {
+        "scores": {
+          "N": 35,
+          "T": 25,
+          "B": 15,
+          "E": 20
+        },
+        "interval": [
+          95,
+          95
+        ],
+        "coverage": 1.0,
+        "possible_levels": [
+          "high"
+        ],
+        "level": "high",
+        "status": "stable",
+        "boundary": false,
+        "quality": 1.0,
+        "version": "intent-2.1",
+        "dimensions": {
+          "N": "需求",
+          "T": "时间",
+          "B": "预算",
+          "E": "行动"
+        },
+        "labels": {
+          "need_none": "明确无当前需求",
+          "need_general": "泛泛了解",
+          "need_problem": "明确具体问题",
+          "need_impact": "问题及受影响工作环节明确",
+          "time_none": "明确无推进计划",
+          "time_later": "三个月以后",
+          "time_1_3m": "1—3个月／下月试用期望",
+          "time_soon": "明确一个月内窗口",
+          "budget_none": "本项目无支出安排",
+          "budget_discuss": "愿讨论付费",
+          "budget_range": "有可接受价格范围",
+          "budget_approved": "预算获批且覆盖报价",
+          "action_polite": "仅礼貌回应",
+          "action_contact": "同意具体联系渠道",
+          "action_request": "主动要求方案并提问",
+          "action_booked": "确认日期及参与者",
+          "unknown": "尚未获得证据"
+        }
+      },
+      "provider": {
+        "provider": "llm",
+        "model": "qwen-plus",
+        "calls": 1,
+        "tokens": 3220,
+        "prompt_version": "extract-v2.1",
+        "prompt_hash": "81e5135a88f8"
+      },
+      "entity_status": "verified",
+      "lead": {
+        "company_name": "青禾空间设计（杭州）有限公司",
+        "industry": "全屋定制",
+        "area": "杭州",
+        "contact_name": "陈宇",
+        "contact_title": "设计总监",
+        "phone": "13800000000",
+        "intent_level": "high",
+        "intent_reason": "高意向，规则分数95分。需求：问题及受影响工作环节明确[T04]；时间：明确一个月内窗口[T04]；预算：有可接受价格范围[T04]；行动：确认日期及参与者[T06]。采购角色与实际安排仍需确认。",
+        "demand_summary": "出图慢，跟工厂对接经常出错，希望改善设计和生产对接。",
+        "mendian": null,
+        "shejishi": 12,
+        "call_time": null,
+        "next_action": "建议一个工作日内按已同意渠道跟进，确认演示或试用日期及参与者；完成审核后交付。",
+        "confidence_score": 1.0,
+        "need_human_review": true
+      },
+      "validation_issues": [],
+      "elapsed_ms": 23515,
+      "analysis_id": "call_4741b8108da9"
+    },
+    {
+      "sample": "conditional",
+      "status": "completed",
+      "error": null,
+      "intent": {
+        "scores": {
+          "N": 25,
+          "T": null,
+          "B": null,
+          "E": null
+        },
+        "interval": [
+          25,
+          90
+        ],
+        "coverage": 0.35,
+        "possible_levels": [
+          "high",
+          "low",
+          "medium"
+        ],
+        "level": null,
+        "status": "insufficient",
+        "boundary": false,
+        "quality": 0.25,
+        "version": "intent-2.1",
+        "dimensions": {
+          "N": "需求",
+          "T": "时间",
+          "B": "预算",
+          "E": "行动"
+        },
+        "labels": {
+          "need_none": "明确无当前需求",
+          "need_general": "泛泛了解",
+          "need_problem": "明确具体问题",
+          "need_impact": "问题及受影响工作环节明确",
+          "time_none": "明确无推进计划",
+          "time_later": "三个月以后",
+          "time_1_3m": "1—3个月／下月试用期望",
+          "time_soon": "明确一个月内窗口",
+          "budget_none": "本项目无支出安排",
+          "budget_discuss": "愿讨论付费",
+          "budget_range": "有可接受价格范围",
+          "budget_approved": "预算获批且覆盖报价",
+          "action_polite": "仅礼貌回应",
+          "action_contact": "同意具体联系渠道",
+          "action_request": "主动要求方案并提问",
+          "action_booked": "确认日期及参与者",
+          "unknown": "尚未获得证据"
+        }
+      },
+      "provider": {
+        "provider": "llm",
+        "model": "qwen-plus",
+        "calls": 1,
+        "tokens": 2682,
+        "prompt_version": "extract-v2.1",
+        "prompt_hash": "81e5135a88f8"
+      },
+      "entity_status": "unresolved",
+      "lead": null,
+      "validation_issues": [
+        {
+          "code": "SIGNAL_UNSUPPORTED",
+          "field": "signals.T",
+          "message": "引用未明确支持该信号；未知或条件表达不能当作肯定/否定承诺"
+        },
+        {
+          "code": "SIGNAL_UNSUPPORTED",
+          "field": "signals.B",
+          "message": "引用未明确支持该信号；未知或条件表达不能当作肯定/否定承诺"
+        },
+        {
+          "code": "SIGNAL_UNSUPPORTED",
+          "field": "signals.E",
+          "message": "引用未明确支持该信号；未知或条件表达不能当作肯定/否定承诺"
+        }
+      ],
+      "elapsed_ms": 14220,
+      "analysis_id": "call_c24f3a4f3dad"
+    },
+    {
+      "sample": "dnc",
+      "status": "completed",
+      "error": null,
+      "intent": {
+        "scores": {
+          "N": 0,
+          "T": null,
+          "B": null,
+          "E": null
+        },
+        "interval": [
+          0,
+          65
+        ],
+        "coverage": 0.35,
+        "possible_levels": [
+          "low",
+          "medium"
+        ],
+        "level": "low",
+        "status": "policy",
+        "boundary": false,
+        "quality": 1.0,
+        "version": "intent-2.1",
+        "dimensions": {
+          "N": "需求",
+          "T": "时间",
+          "B": "预算",
+          "E": "行动"
+        },
+        "labels": {
+          "need_none": "明确无当前需求",
+          "need_general": "泛泛了解",
+          "need_problem": "明确具体问题",
+          "need_impact": "问题及受影响工作环节明确",
+          "time_none": "明确无推进计划",
+          "time_later": "三个月以后",
+          "time_1_3m": "1—3个月／下月试用期望",
+          "time_soon": "明确一个月内窗口",
+          "budget_none": "本项目无支出安排",
+          "budget_discuss": "愿讨论付费",
+          "budget_range": "有可接受价格范围",
+          "budget_approved": "预算获批且覆盖报价",
+          "action_polite": "仅礼貌回应",
+          "action_contact": "同意具体联系渠道",
+          "action_request": "主动要求方案并提问",
+          "action_booked": "确认日期及参与者",
+          "unknown": "尚未获得证据"
+        }
+      },
+      "provider": {
+        "provider": "llm",
+        "model": "qwen-plus",
+        "calls": 1,
+        "tokens": 2650,
+        "prompt_version": "extract-v2.1",
+        "prompt_hash": "81e5135a88f8"
+      },
+      "entity_status": "unresolved",
+      "lead": {
+        "company_name": null,
+        "industry": null,
+        "area": null,
+        "contact_name": null,
+        "contact_title": null,
+        "phone": null,
+        "intent_level": "low",
+        "intent_reason": "低意向：客户明确要求停止联系。",
+        "demand_summary": null,
+        "mendian": null,
+        "shejishi": null,
+        "call_time": null,
+        "next_action": "停止营销联系；保留拒联标记，不进入培育或自动外联。",
+        "confidence_score": 0.0,
+        "need_human_review": true
+      },
+      "validation_issues": [
+        {
+          "code": "SIGNAL_UNSUPPORTED",
+          "field": "signals.T",
+          "message": "引用未明确支持该信号；未知或条件表达不能当作肯定/否定承诺"
+        },
+        {
+          "code": "SIGNAL_UNSUPPORTED",
+          "field": "signals.B",
+          "message": "引用未明确支持该信号；未知或条件表达不能当作肯定/否定承诺"
+        },
+        {
+          "code": "SIGNAL_UNSUPPORTED",
+          "field": "signals.E",
+          "message": "引用未明确支持该信号；未知或条件表达不能当作肯定/否定承诺"
+        }
+      ],
+      "elapsed_ms": 14790,
+      "analysis_id": "call_58a8a939d17f"
+    }
+  ]
+}

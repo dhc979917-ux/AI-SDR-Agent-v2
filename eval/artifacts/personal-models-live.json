@@ -1,0 +1,19 @@
+{
+  "data_mode": "synthetic",
+  "status": "blocked_by_provider_billing",
+  "date": "2026-10-20",
+  "text": {
+    "model": "qwen-plus",
+    "http_status": 400,
+    "provider_error_code": "Arrearage"
+  },
+  "audio": {
+    "model": "qwen3-asr-flash",
+    "http_status": 400,
+    "provider_error_code": "Arrearage",
+    "fixture": "data/model-probe.wav",
+    "fixture_seconds": 1.7169375
+  },
+  "scope": "仅固定JSON及合成语音连接测试；未发送真实客户数据。当前个人设置接口未取得成功的云端响应，未验证OpenAI和DeepSeek真实账号。",
+  "configuration_unchanged": true
+}

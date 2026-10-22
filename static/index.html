@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#296aff"><title>酷家乐 · AI SDR 工作台</title>
+  <meta name="description" content="面向酷家乐 XDR 销售团队的 AI SDR 工作台：通话分析、企业主体核验、客户意向评分与人工审核。">
+  <link rel="icon" href="/static/favicon.svg?v=kujiale-1" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/style.css?v=batch-auto-19">
+  <script src="/static/team.js?v=batch-auto-19" defer></script>
+  <script src="/static/audio-roles.js?v=batch-auto-19" defer></script>
+  <script src="/static/models.js?v=personal-models-1" defer></script>
+  <script src="/static/app.js?v=batch-auto-19" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="酷家乐 · AI SDR 工作台首页"><img class="brand-logo" src="/static/kujiale-enterprise.svg" alt="酷家乐企业版" width="160" height="28"><img class="brand-compact" src="/static/favicon.svg?v=kujiale-1" alt="酷家乐" width="32" height="36"></a>
+    <div class="workspace-label"><span class="workspace-icon">AI</span><div>AI SDR 工作台<small>XDR 销售团队</small></div><span class="local-pill">作业演示</span></div>
+    <div class="nav-label">工作空间</div>
+    <nav id="navigation">
+      <button class="nav-item" data-nav="audio"><span data-icon="audio"></span>录音转写</button>
+      <button class="nav-item active" data-nav="workspace"><span data-icon="sparkles"></span>分析工作台</button>
+      <button class="nav-item" data-nav="customers"><span data-icon="building"></span>客户资源</button>
+      <button class="nav-item" data-nav="queue"><span data-icon="inbox"></span>人工审核<span class="nav-count" id="pending-count">0</span></button>
+      <button class="nav-item" data-nav="knowledge"><span data-icon="layers"></span>反馈知识库</button>
+      <button class="nav-item" data-nav="metrics"><span data-icon="chart"></span>运行概览</button>
+      <button class="nav-item" data-nav="models"><span data-icon="switch"></span>我的模型</button>
+      <button class="nav-item admin-only" data-nav="users" hidden><span data-icon="user"></span>账号管理</button>
+    </nav>
+    <div class="sidebar-note"><span class="tiny-line"></span><strong>从客户需求，到下一次跟进。</strong><p>全屋定制 · 家装 · 家居<br>核实企业主体，判断采购意向。</p></div>
+    <div class="sidebar-bottom"><span class="avatar">员</span><div><strong id="actor-name">尚未登录</strong><small id="actor-mode">员工工作空间</small></div><button class="icon-button" id="switch-actor" title="账号与安全" aria-label="账号与安全"><span data-icon="user"></span></button></div>
+  </aside>
+  <div class="shell">
+    <header class="topbar"><div class="breadcrumb">酷家乐 XDR <span>/</span> <strong id="page-label">分析工作台</strong></div><div class="top-actions"><span class="connection" id="model-status"><i></i>正在连接</span><button class="text-button" data-action="refresh"><span data-icon="refresh"></span>刷新</button></div></header>
+    <main id="main" aria-live="polite"><div class="loading"><span class="spinner"></span>正在打开工作空间…</div></main>
+  </div>
+  <div id="toast" role="status" class="toast" hidden></div>
+  <dialog id="modal"><div id="modal-content"></div></dialog>
+</body>
+</html>

@@ -1,0 +1,18 @@
+[project]
+name = "kujiale-sdr-agent"
+version = "0.4.0"
+description = "Evidence-first SDR analysis, entity resolution and human review"
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.34,<1", "httpx>=0.28,<1", "pydantic>=2.11,<3", "pypinyin>=0.54,<1", "rapidfuzz>=3.13,<4", "python-dotenv>=1,<2", "mutagen==1.47.0", "imageio-ffmpeg==0.6.0", "cryptography==48.0.1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+# Optional local offline ASR (FunASR) and silence-aware segmentation (silero-vad).
+# Both stay optional: without them the built-in cloud adapters and energy heuristic are used.
+local-asr = ["funasr>=1.2"]
+vad = ["silero-vad[audio]>=3.4"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

@@ -1,0 +1,37 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      SDR_COOKIE_SECURE: "true"
+      SDR_PROXY_HEADERS: "true"
+      FORWARDED_ALLOW_IPS: "*"
+      SDR_DEMO_ADMIN_USER: ${SDR_DEMO_ADMIN_USER:-admin}
+      SDR_DEMO_ADMIN_NAME: ${SDR_DEMO_ADMIN_NAME:-Demo Admin}
+      SDR_SEED_DEMO: ${SDR_SEED_DEMO:-true}
+      SDR_AUTO_PUBLISH: "false"
+    volumes:
+      - ./demo-var:/app/var
+    expose:
+      - "8765"
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DEMO_HOST: ${DEMO_HOST}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

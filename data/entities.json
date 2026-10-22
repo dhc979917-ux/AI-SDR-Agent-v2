@@ -1,0 +1,6 @@
+[
+  {"id":"DEMO-QH-001","name":"青禾空间设计（杭州）有限公司","brand":"青禾空间","aliases":["青禾空间","青禾设计","清禾空间"],"role":"headquarters","area":"浙江省杭州市","industry":"全屋定制","status":"演示存续","source_url":"demo://catalog/qh-001","source_title":"合成企业资料 · 非工商数据","observed_at":"2026-10-20","valid_until":"2099-01-01","data_mode":"synthetic","verified_registry":true},
+  {"id":"DEMO-QM-001","name":"栖木家居设计（杭州）有限公司","brand":"栖木定制","aliases":["栖木定制","栖木家居","七木定制"],"role":"dealer","area":"浙江省杭州市","industry":"全屋定制","status":"演示存续","source_url":"demo://catalog/qm-001","source_title":"合成门店资料 · 非工商数据","observed_at":"2026-10-20","valid_until":"2099-01-01","data_mode":"synthetic","verified_registry":true},
+  {"id":"DEMO-QM-002","name":"栖木生活家居（杭州）有限公司","brand":"栖木定制","aliases":["栖木定制","栖木生活","七木定制"],"role":"dealer","area":"浙江省杭州市","industry":"全屋定制","status":"演示存续","source_url":"demo://catalog/qm-002","source_title":"合成门店资料 · 非工商数据","observed_at":"2026-10-20","valid_until":"2099-01-01","data_mode":"synthetic","verified_registry":true},
+  {"id":"DEMO-YZ-001","name":"云筑家具制造（苏州）有限公司","brand":"云筑家具","aliases":["云筑家具","云筑","云住家具"],"role":"headquarters","area":"江苏省苏州市","industry":"家具制造","status":"演示存续","source_url":"demo://catalog/yz-001","source_title":"合成企业资料 · 非工商数据","observed_at":"2026-10-20","valid_until":"2099-01-01","data_mode":"synthetic","verified_registry":true}
+]

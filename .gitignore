@@ -1,0 +1,22 @@
+.venv/
+.env
+.env.*
+!.env.example
+var/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+*.egg-info/
+# Local handoffs, archives and credentials are not public source.
+*handoff*
+*HANDOFF*
+*交接*
+*.zip
+*.sqlite*
+*.db
+*.pem
+*.key
+demo-var/
+cloudflare/.env
+cloudflare/*.json

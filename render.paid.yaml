@@ -1,0 +1,44 @@
+services:
+  - type: web
+    name: ai-sdr-demo-persistent
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+    region: singapore
+    healthCheckPath: /healthz
+    autoDeploy: false
+    envVars:
+      - key: SDR_COOKIE_SECURE
+        value: "true"
+      - key: SDR_PROXY_HEADERS
+        value: "true"
+      - key: SDR_AUTO_PUBLISH
+        value: "false"
+      - key: SDR_ENTITY_PROVIDER
+        value: "auto"
+      - key: QCC_MCP_URL
+        value: "https://agent.qcc.com/mcp/company/stream"
+      - key: QCC_CACHE_DAYS
+        value: "0"
+      - key: SDR_DEMO_ADMIN_USER
+        value: "admin"
+      - key: SDR_DEMO_ADMIN_NAME
+        value: "Demo Admin"
+      - key: SDR_DEMO_ADMIN_PASSWORD
+        sync: false
+      - key: SDR_SEED_DEMO
+        value: "true"
+      - key: QCC_MCP_TOKEN
+        sync: false
+      - key: SDR_LLM_API_KEY
+        sync: false
+      - key: SDR_ASR_API_KEY
+        sync: false
+      - key: SDR_DB_PATH
+        value: "/app/var/sdr.sqlite3"
+      - key: QCC_CACHE_PATH
+        value: "/app/var/qcc-cache.json"
+    disk:
+      name: sdr-data
+      mountPath: /app/var
+      sizeGB: 1

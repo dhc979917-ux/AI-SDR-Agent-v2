@@ -1,0 +1,13 @@
+{
+  "health": {
+    "status": "ok",
+    "version": "0.2.0"
+  },
+  "fields": 15,
+  "candidate_export": 200,
+  "synthetic_qualified_export_blocked": 409,
+  "csv_export": 200,
+  "analysis_id": "call_4741b8108da9",
+  "revision": 3,
+  "note": "本机已完成审核的合成记录；只读取API，未调用模型。"
+}

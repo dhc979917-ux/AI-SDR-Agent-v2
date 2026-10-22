@@ -1,0 +1,140 @@
+{
+  "kind": "live_entity_candidate_recall_smoke_not_blind_benchmark",
+  "created_at": "2026-10-20T16:34:59+00:00",
+  "count": 7,
+  "expected_count": 6,
+  "top1_accuracy": 1.0,
+  "top3_recall": 1.0,
+  "candidate_recall": 1.0,
+  "abstention_rate": 0.7143,
+  "auto_confirmed_count": 2,
+  "auto_confirmed_accuracy": 1.0,
+  "rows": [
+    {
+      "id": "ENTITY-01",
+      "query": "木里木外",
+      "type": "brand",
+      "expected": "木里木外家具启东有限公司",
+      "status": "ambiguous",
+      "top1": "木里木外家具启东有限公司",
+      "top3": [
+        "木里木外家具启东有限公司",
+        "上海木里实业发展有限公司",
+        "上海木外信息咨询服务有限公司"
+      ],
+      "candidate_count": 5,
+      "hit1": true,
+      "hit3": true,
+      "recall": true,
+      "abstained": true,
+      "error": null
+    },
+    {
+      "id": "ENTITY-02",
+      "query": "七木定制",
+      "type": "homophone_brand",
+      "expected": "六安七木定制家居有限公司",
+      "status": "ambiguous",
+      "top1": "六安七木定制家居有限公司",
+      "top3": [
+        "六安七木定制家居有限公司"
+      ],
+      "candidate_count": 1,
+      "hit1": true,
+      "hit3": true,
+      "recall": true,
+      "abstained": true,
+      "error": null
+    },
+    {
+      "id": "ENTITY-03",
+      "query": "木里木外家具启东有限公司",
+      "type": "full_name",
+      "expected": "木里木外家具启东有限公司",
+      "status": "suggested",
+      "top1": "木里木外家具启东有限公司",
+      "top3": [
+        "木里木外家具启东有限公司",
+        "启东木外信息科技服务有限公司",
+        "木里木外家具启东有限公司工会委员会"
+      ],
+      "candidate_count": 3,
+      "hit1": true,
+      "hit3": true,
+      "recall": true,
+      "abstained": false,
+      "error": null
+    },
+    {
+      "id": "ENTITY-04",
+      "query": "青禾空间设计（杭州）有限公司",
+      "type": "full_name_variant",
+      "expected": "杭州青禾空间设计有限公司",
+      "status": "ambiguous",
+      "top1": "杭州青禾空间设计有限公司",
+      "top3": [
+        "杭州青禾空间设计有限公司",
+        "杭州青禾云杭科技有限公司",
+        "浙江青禾自然资源规划有限公司"
+      ],
+      "candidate_count": 5,
+      "hit1": true,
+      "hit3": true,
+      "recall": true,
+      "abstained": true,
+      "error": null
+    },
+    {
+      "id": "ENTITY-05",
+      "query": "上海木里实业发展有限公司",
+      "type": "full_name",
+      "expected": "上海木里实业发展有限公司",
+      "status": "suggested",
+      "top1": "上海木里实业发展有限公司",
+      "top3": [
+        "上海木里实业发展有限公司"
+      ],
+      "candidate_count": 1,
+      "hit1": true,
+      "hit3": true,
+      "recall": true,
+      "abstained": false,
+      "error": null
+    },
+    {
+      "id": "ENTITY-06",
+      "query": "酷家乐",
+      "type": "brand",
+      "expected": "杭州群核信息技术有限公司",
+      "status": "ambiguous",
+      "top1": "杭州群核信息技术有限公司",
+      "top3": [
+        "杭州群核信息技术有限公司",
+        "佛山酷家乐电子商务有限公司",
+        "酷家乐（东莞）智能家居有限公司"
+      ],
+      "candidate_count": 5,
+      "hit1": true,
+      "hit3": true,
+      "recall": true,
+      "abstained": true,
+      "error": null
+    },
+    {
+      "id": "ENTITY-07",
+      "query": "不存在品牌XYZ123",
+      "type": "no_match",
+      "expected": null,
+      "status": "unresolved",
+      "top1": null,
+      "top3": [],
+      "candidate_count": 0,
+      "hit1": false,
+      "hit3": false,
+      "recall": false,
+      "abstained": true,
+      "error": null
+    }
+  ],
+  "limitations": "小型真实企查查冒烟集，用例由开发时观察结果整理，不是冻结盲测集，不能当作真实业务准确率。"
+}

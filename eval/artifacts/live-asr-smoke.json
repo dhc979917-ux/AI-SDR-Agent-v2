@@ -1,0 +1,38 @@
+{
+  "id": "audio_e26b2fd6f227484c9e5f475f",
+  "filename": "合成通话_转写验证.wav",
+  "size": 548204,
+  "sha256": "096981153b33b6d80830bf1e415395244dd48847bf16b155b24c7b732ea51b72",
+  "duration": 17.003375,
+  "data_mode": "synthetic",
+  "status": "confirmed",
+  "raw_text": "您好，我是酷家乐的销售，想了解一下您的设计需求。我们最近出图比较慢，希望下周试用一下软件。好的，我给您安排产品演示，可以周三下午两点我们一起参加。",
+  "confirmed_text": "销售：您好，我是酷家乐的销售，想了解一下您的设计需求。\n客户：我们最近出图比较慢，希望下周试用一下软件。\n销售：好的，我给您安排产品演示。\n客户：可以，周三下午两点我们一起参加。",
+  "confirmed_by": "sales_a",
+  "revision": 3,
+  "created_at": "2026-10-20T02:10:52+00:00",
+  "provider": {
+    "model": "qwen3-asr-flash",
+    "tokens": 476,
+    "speaker_roles": "manual_confirmation_required",
+    "elapsed_ms": 3180
+  },
+  "analyses": [
+    {
+      "id": "call_47ea159b96a3",
+      "customer_id": "customer_84916de95a18",
+      "status": "completed",
+      "request": {
+        "transcript": "销售：您好，我是酷家乐的销售，想了解一下您的设计需求。\n客户：我们最近出图比较慢，希望下周试用一下软件。\n销售：好的，我给您安排产品演示。\n客户：可以，周三下午两点我们一起参加。",
+        "title": "合成通话_转写验证.wav",
+        "mode": "rules",
+        "data_mode": "synthetic",
+        "call_time": null,
+        "idempotency_key": "ba5e4d39-2aef-4ff6-a3c1-7628d308af59",
+        "customer_id": "customer_84916de95a18",
+        "transcription_id": "audio_e26b2fd6f227484c9e5f475f"
+      }
+    }
+  ],
+  "test_data": "本机Tingting语音合成；不含真实客户数据；仅ASR调用真实服务，后续分析使用离线规则。"
+}

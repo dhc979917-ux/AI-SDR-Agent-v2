@@ -1,0 +1,319 @@
+{
+  "company_name": "青禾空间设计（杭州）有限公司",
+  "industry": "全屋定制",
+  "area": "杭州",
+  "contact_name": "陈宇",
+  "contact_title": "采购负责人",
+  "phone": "13800000000",
+  "intent_level": "high",
+  "intent_reason": "高意向，规则分数95分。需求：问题及受影响工作环节明确[T04]；时间：明确一个月内窗口[T04]；预算：有可接受价格范围[T04]；行动：确认日期及参与者[T06]。采购角色与实际安排仍需确认。",
+  "demand_summary": "出图慢，跟工厂对接经常出错，希望改善设计和生产对接。",
+  "mendian": null,
+  "shejishi": 12,
+  "call_time": null,
+  "next_action": "建议一个工作日内按已同意渠道跟进，确认演示或试用日期及参与者；完成审核后交付。",
+  "confidence_score": 1.0,
+  "need_human_review": false,
+  "_meta": {
+    "analysis_id": "call_4741b8108da9",
+    "revision": 3,
+    "export_kind": "candidate",
+    "customer_id": "customer_ed2a039eccf3",
+    "transcription_id": null,
+    "audio_source": null,
+    "demo": true,
+    "data_mode": "synthetic",
+    "lead_available": true,
+    "review": {
+      "status": "approved",
+      "stage": "complete",
+      "primary_actor": "演示审核员 A",
+      "secondary_actor": "演示审核员 B"
+    },
+    "delivery_status": "ready",
+    "evidence": {
+      "raw_company": {
+        "value": "青禾空间设计（杭州）有限公司",
+        "evidence": [
+          {
+            "turn_id": "T02",
+            "quote": "我们公司全称是青禾空间设计（杭州）有限公司，在杭州做全屋定制。"
+          }
+        ],
+        "qualifier": "exact",
+        "validation_status": "valid"
+      },
+      "brand_name": {
+        "value": null,
+        "evidence": [],
+        "qualifier": "unknown",
+        "validation_status": "valid"
+      },
+      "industry": {
+        "value": "全屋定制",
+        "evidence": [
+          {
+            "turn_id": "T02",
+            "quote": "我们公司全称是青禾空间设计（杭州）有限公司，在杭州做全屋定制。"
+          }
+        ],
+        "qualifier": "exact",
+        "validation_status": "valid"
+      },
+      "area": {
+        "value": "杭州",
+        "evidence": [
+          {
+            "turn_id": "T02",
+            "quote": "我们公司全称是青禾空间设计（杭州）有限公司，在杭州做全屋定制。"
+          }
+        ],
+        "qualifier": "exact",
+        "validation_status": "valid"
+      },
+      "contact_name": {
+        "value": "陈宇",
+        "evidence": [
+          {
+            "turn_id": "T02",
+            "quote": "我叫陈宇，我是设计总监，设计师有12人。"
+          }
+        ],
+        "qualifier": "exact",
+        "validation_status": "valid"
+      },
+      "contact_title": {
+        "value": "采购负责人",
+        "evidence": [],
+        "qualifier": "exact",
+        "validation_status": "human_attested",
+        "source_reference": "demo://crm/confirmed-role",
+        "reviewer": "演示审核员 A",
+        "reason": "演示：客户在CRM补充确认采购职责，提交另一人复核。"
+      },
+      "phone": {
+        "value": "13800000000",
+        "evidence": [
+          {
+            "turn_id": "T06",
+            "quote": "手机号13800000000，你加我微信。"
+          }
+        ],
+        "qualifier": "exact",
+        "validation_status": "valid"
+      },
+      "mendian": {
+        "value": null,
+        "evidence": [],
+        "qualifier": "unknown",
+        "validation_status": "valid"
+      },
+      "shejishi": {
+        "value": 12,
+        "evidence": [
+          {
+            "turn_id": "T02",
+            "quote": "我叫陈宇，我是设计总监，设计师有12人。"
+          }
+        ],
+        "qualifier": "exact",
+        "validation_status": "valid"
+      },
+      "team_count": {
+        "value": null,
+        "evidence": [],
+        "qualifier": "unknown",
+        "validation_status": "valid"
+      },
+      "demand_summary": {
+        "value": "出图慢，跟工厂对接经常出错，希望改善设计和生产对接。",
+        "evidence": [
+          {
+            "turn_id": "T04",
+            "quote": "出图慢，跟工厂对接经常出错，希望改善设计和生产对接。"
+          }
+        ],
+        "qualifier": "exact",
+        "validation_status": "valid"
+      }
+    },
+    "company_resolution": {
+      "status": "verified",
+      "selected": {
+        "id": "DEMO-QH-001",
+        "name": "青禾空间设计（杭州）有限公司",
+        "brand": "青禾空间",
+        "aliases": [
+          "青禾空间",
+          "青禾设计",
+          "清禾空间"
+        ],
+        "role": "headquarters",
+        "area": "浙江省杭州市",
+        "industry": "全屋定制",
+        "status": "演示存续",
+        "source_url": "demo://catalog/qh-001",
+        "source_title": "合成企业资料 · 非工商数据",
+        "observed_at": "2026-10-20",
+        "valid_until": "2099-01-01",
+        "data_mode": "synthetic",
+        "verified_registry": true,
+        "rank_score": 1.0,
+        "name_match": 1.0,
+        "relation_supported": true,
+        "relation_quotes": [
+          "我们公司全称是青禾空间设计（杭州）有限公司，在杭州做全屋定制。我叫陈宇，我是设计总监，设计师有12人。"
+        ],
+        "source_valid": true,
+        "missing_links": []
+      },
+      "candidates": [
+        {
+          "id": "DEMO-QH-001",
+          "name": "青禾空间设计（杭州）有限公司",
+          "brand": "青禾空间",
+          "aliases": [
+            "青禾空间",
+            "青禾设计",
+            "清禾空间"
+          ],
+          "role": "headquarters",
+          "area": "浙江省杭州市",
+          "industry": "全屋定制",
+          "status": "演示存续",
+          "source_url": "demo://catalog/qh-001",
+          "source_title": "合成企业资料 · 非工商数据",
+          "observed_at": "2026-10-20",
+          "valid_until": "2099-01-01",
+          "data_mode": "synthetic",
+          "verified_registry": true,
+          "rank_score": 1.0,
+          "name_match": 1.0,
+          "relation_supported": true,
+          "relation_quotes": [
+            "我们公司全称是青禾空间设计（杭州）有限公司，在杭州做全屋定制。我叫陈宇，我是设计总监，设计师有12人。"
+          ],
+          "source_valid": true,
+          "missing_links": []
+        }
+      ],
+      "mention": "青禾空间设计（杭州）有限公司",
+      "quality": 1.0,
+      "search_status": "local_only",
+      "query": "青禾空间设计（杭州）有限公司",
+      "missing": [],
+      "catalog_version": "demo-catalog-v1"
+    },
+    "signals": {
+      "N": {
+        "kind": "need_impact",
+        "evidence": [
+          {
+            "turn_id": "T04",
+            "quote": "出图慢，跟工厂对接经常出错，希望改善设计和生产对接。"
+          }
+        ],
+        "note": "",
+        "validation_status": "valid"
+      },
+      "T": {
+        "kind": "time_soon",
+        "evidence": [
+          {
+            "turn_id": "T04",
+            "quote": "下周想试用"
+          }
+        ],
+        "note": "",
+        "validation_status": "valid"
+      },
+      "B": {
+        "kind": "budget_range",
+        "evidence": [
+          {
+            "turn_id": "T04",
+            "quote": "预算一年五万可以接受。"
+          }
+        ],
+        "note": "",
+        "validation_status": "valid"
+      },
+      "E": {
+        "kind": "action_booked",
+        "evidence": [
+          {
+            "turn_id": "T06",
+            "quote": "确认，就定周三下午两点，我和采购经理一起参加演示。"
+          }
+        ],
+        "note": "",
+        "validation_status": "valid"
+      }
+    },
+    "validation_issues": [],
+    "do_not_contact": false,
+    "scorecard": {
+      "scores": {
+        "N": 35,
+        "T": 25,
+        "B": 15,
+        "E": 20
+      },
+      "interval": [
+        95,
+        95
+      ],
+      "coverage": 1.0,
+      "possible_levels": [
+        "high"
+      ],
+      "level": "high",
+      "status": "stable",
+      "boundary": false,
+      "quality": 1.0,
+      "version": "intent-2.1",
+      "dimensions": {
+        "N": "需求",
+        "T": "时间",
+        "B": "预算",
+        "E": "行动"
+      },
+      "labels": {
+        "need_none": "明确无当前需求",
+        "need_general": "泛泛了解",
+        "need_problem": "明确具体问题",
+        "need_impact": "问题及受影响工作环节明确",
+        "time_none": "明确无推进计划",
+        "time_later": "三个月以后",
+        "time_1_3m": "1—3个月／下月试用期望",
+        "time_soon": "明确一个月内窗口",
+        "budget_none": "本项目无支出安排",
+        "budget_discuss": "愿讨论付费",
+        "budget_range": "有可接受价格范围",
+        "budget_approved": "预算获批且覆盖报价",
+        "action_polite": "仅礼貌回应",
+        "action_contact": "同意具体联系渠道",
+        "action_request": "主动要求方案并提问",
+        "action_booked": "确认日期及参与者",
+        "unknown": "尚未获得证据"
+      }
+    },
+    "confidence_method": "heuristic_min_v1",
+    "review_reasons": [],
+    "versions": {
+      "schema": "2.1",
+      "rules": "intent-2.1",
+      "validation": "evidence-2.2",
+      "entity": "entity-2.2"
+    },
+    "provider": {
+      "provider": "llm",
+      "model": "qwen-plus",
+      "calls": 1,
+      "tokens": 3220,
+      "prompt_version": "extract-v2.1",
+      "prompt_hash": "81e5135a88f8"
+    },
+    "error": null
+  }
+}

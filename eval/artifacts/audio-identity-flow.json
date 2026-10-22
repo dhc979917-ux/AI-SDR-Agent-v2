@@ -1,0 +1,60 @@
+{
+  "data_mode": "synthetic",
+  "upload_transport": "authenticated localhost HTTP",
+  "duration_seconds": 17.8044375,
+  "asr": {
+    "model": "qwen3-asr-flash",
+    "tokens": 504,
+    "speaker_roles": "manual_confirmation_required",
+    "elapsed_ms": 8542
+  },
+  "raw_text": "您好，我是酷家乐的销售，方便介绍一下您这边的情况吗？您好，我叫陈晓，我们是晨光设计工作室，主要做全屋定制，我们想下周试用一下软件。好的，我来安排产品演示。",
+  "identity": {
+    "company": {
+      "value": "晨光设计工作室",
+      "quote": "我叫陈晓，我们是晨光设计工作室，主要做全屋定制"
+    },
+    "contact": {
+      "value": "陈晓",
+      "quote": "我叫陈晓，我们是晨光设计工作室，主要做全屋定制"
+    },
+    "phone": null,
+    "customer_type": {
+      "value": "全屋定制",
+      "quote": "我们是晨光设计工作室，主要做全屋定制"
+    },
+    "confidence": "clear",
+    "reason": "客户明确自报姓名、公司名称及业务类型，语境清晰无歧义",
+    "model": "qwen-plus",
+    "prompt_version": "audio-identity-v1",
+    "prompt_hash": "f82b57a4d286",
+    "source_sha256": "1ae6a9fbd51d8330cbef825ba5ac8ea8b8e96d558aef0a96f3b34a1c80342541",
+    "tokens": 979,
+    "source_revision": 3,
+    "source": "raw"
+  },
+  "final_status": "confirmed",
+  "customer_name": "晨光设计工作室",
+  "association": "explicit human confirmation through browser",
+  "ui_checks": [
+    "two modes toggle",
+    "search by contact",
+    "candidate selection",
+    "new customer form prefill",
+    "confirm association",
+    "save role correction",
+    "enter analysis with locked customer and data mode"
+  ],
+  "responsive": {
+    "desktop": {
+      "viewport": 1440,
+      "document": 1440
+    },
+    "mobile": {
+      "viewport": 359,
+      "document": 359
+    }
+  },
+  "browser_errors": [],
+  "foreign_key_check": "pass"
+}

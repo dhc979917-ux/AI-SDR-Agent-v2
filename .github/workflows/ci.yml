@@ -1,0 +1,58 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Run Python tests
+        run: python -m pytest -q
+
+      - name: Run synthetic regression evaluation
+        run: python scripts/evaluate.py --output /tmp/rules-regression.json
+
+      - name: Run labeled-set example evaluation
+        run: python scripts/evaluate_labeled.py --dataset eval/labeled_cases.example.json --output /tmp/labeled-example.json
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run frontend tests
+        run: node --test tests/test_audio_confirmation.cjs
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check static/app.js
+          node --check static/team.js
+          node --check static/audio-roles.js
+          node --check static/models.js
+
+      - name: Upload evaluation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evaluation-report
+          path: |
+            /tmp/rules-regression.json
+            /tmp/labeled-example.json
+          if-no-files-found: ignore
+          retention-days: 7

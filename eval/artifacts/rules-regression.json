@@ -1,0 +1,270 @@
+{
+  "kind": "synthetic_regression_not_business_accuracy",
+  "mode": "rules",
+  "created_at": "2026-10-22T02:54:43+00:00",
+  "dataset_sha256": "330db71c7fd4e38d7bcf5bdd48fca099fe20caac2b006577cbc903f7ba487d24",
+  "count": 12,
+  "passed": 12,
+  "graded_count": 8,
+  "class_metrics": {
+    "high": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "medium": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "low": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "macro_f1": 1.0,
+  "abstention_count": 4,
+  "results": [
+    {
+      "id": "E01",
+      "slice": "high",
+      "expected": "high",
+      "actual": "high",
+      "checks": {
+        "level": true,
+        "processing": true
+      },
+      "passed": true,
+      "scores": {
+        "N": 35,
+        "T": 20,
+        "B": 15,
+        "E": 5
+      },
+      "elapsed_ms": 44,
+      "issues": []
+    },
+    {
+      "id": "E02",
+      "slice": "medium",
+      "expected": "medium",
+      "actual": "medium",
+      "checks": {
+        "level": true,
+        "processing": true
+      },
+      "passed": true,
+      "scores": {
+        "N": 25,
+        "T": 0,
+        "B": 0,
+        "E": 5
+      },
+      "elapsed_ms": 36,
+      "issues": []
+    },
+    {
+      "id": "E03",
+      "slice": "low",
+      "expected": "low",
+      "actual": "low",
+      "checks": {
+        "level": true,
+        "processing": true
+      },
+      "passed": true,
+      "scores": {
+        "N": 15,
+        "T": 0,
+        "B": 0,
+        "E": 0
+      },
+      "elapsed_ms": 35,
+      "issues": []
+    },
+    {
+      "id": "E04",
+      "slice": "refusal",
+      "expected": "low",
+      "actual": "low",
+      "checks": {
+        "level": true,
+        "processing": true
+      },
+      "passed": true,
+      "scores": {
+        "N": 15,
+        "T": 0,
+        "B": 0,
+        "E": 0
+      },
+      "elapsed_ms": 33,
+      "issues": []
+    },
+    {
+      "id": "E05",
+      "slice": "dnc",
+      "expected": "low",
+      "actual": "low",
+      "checks": {
+        "level": true,
+        "processing": true,
+        "contact_policy": true
+      },
+      "passed": true,
+      "scores": {
+        "N": 0,
+        "T": 0,
+        "B": 0,
+        "E": 0
+      },
+      "elapsed_ms": 33,
+      "issues": []
+    },
+    {
+      "id": "E06",
+      "slice": "unknown",
+      "expected": null,
+      "actual": null,
+      "checks": {
+        "level": true,
+        "processing": true
+      },
+      "passed": true,
+      "scores": {
+        "N": 0,
+        "T": 0,
+        "B": 0,
+        "E": 0
+      },
+      "elapsed_ms": 33,
+      "issues": []
+    },
+    {
+      "id": "E07",
+      "slice": "service",
+      "expected": null,
+      "actual": null,
+      "checks": {
+        "level": true,
+        "processing": true
+      },
+      "passed": true,
+      "scores": {
+        "N": 0,
+        "T": 0,
+        "B": 0,
+        "E": 0
+      },
+      "elapsed_ms": 34,
+      "issues": []
+    },
+    {
+      "id": "E08",
+      "slice": "competitor",
+      "expected": "high",
+      "actual": "high",
+      "checks": {
+        "level": true,
+        "processing": true
+      },
+      "passed": true,
+      "scores": {
+        "N": 35,
+        "T": 25,
+        "B": 15,
+        "E": 5
+      },
+      "elapsed_ms": 33,
+      "issues": []
+    },
+    {
+      "id": "E09",
+      "slice": "department",
+      "expected": "low",
+      "actual": "low",
+      "checks": {
+        "level": true,
+        "processing": true,
+        "designer_scope": true
+      },
+      "passed": true,
+      "scores": {
+        "N": 15,
+        "T": 0,
+        "B": 0,
+        "E": 0
+      },
+      "elapsed_ms": 36,
+      "issues": []
+    },
+    {
+      "id": "E10",
+      "slice": "unknown",
+      "expected": null,
+      "actual": null,
+      "checks": {
+        "level": true,
+        "processing": true
+      },
+      "passed": true,
+      "scores": {
+        "N": 0,
+        "T": 0,
+        "B": 0,
+        "E": 0
+      },
+      "elapsed_ms": 34,
+      "issues": []
+    },
+    {
+      "id": "E11",
+      "slice": "medium",
+      "expected": "medium",
+      "actual": "medium",
+      "checks": {
+        "level": true,
+        "processing": true
+      },
+      "passed": true,
+      "scores": {
+        "N": 25,
+        "T": 10,
+        "B": 10,
+        "E": 0
+      },
+      "elapsed_ms": 33,
+      "issues": []
+    },
+    {
+      "id": "E12",
+      "slice": "sales_claim",
+      "expected": null,
+      "actual": null,
+      "checks": {
+        "level": true,
+        "processing": true
+      },
+      "passed": true,
+      "scores": {
+        "N": 0,
+        "T": 0,
+        "B": 0,
+        "E": 0
+      },
+      "elapsed_ms": 34,
+      "issues": []
+    }
+  ],
+  "limitations": "合成边界回归集，已用于工程调试，不是冻结盲测集或真实业务准确率。实际录音尚未取得。"
+}

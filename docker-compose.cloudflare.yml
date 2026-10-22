@@ -1,0 +1,26 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - cloudflare/.env
+    environment:
+      SDR_COOKIE_SECURE: "true"
+      SDR_PROXY_HEADERS: "true"
+      FORWARDED_ALLOW_IPS: "*"
+      SDR_DEMO_ADMIN_USER: ${SDR_DEMO_ADMIN_USER:-admin}
+      SDR_DEMO_ADMIN_NAME: ${SDR_DEMO_ADMIN_NAME:-Demo Admin}
+      SDR_SEED_DEMO: ${SDR_SEED_DEMO:-true}
+      SDR_AUTO_PUBLISH: "false"
+      QCC_CACHE_DAYS: ${QCC_CACHE_DAYS:-0}
+    volumes:
+      - ./demo-var:/app/var
+    expose:
+      - "8765"
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run --token ${CLOUDFLARE_TUNNEL_TOKEN}
+    depends_on:
+      - app

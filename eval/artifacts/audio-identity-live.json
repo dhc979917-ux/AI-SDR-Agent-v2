@@ -1,0 +1,74 @@
+{
+  "data_mode": "synthetic",
+  "scope": "3 synthetic text cases; no real-customer audio or accuracy claim",
+  "passed": 3,
+  "total": 3,
+  "cases": [
+    {
+      "case": "明确客户自述",
+      "transcript": "您好，我是酷家乐的小李，方便介绍一下您吗？你好，我叫陈晓，我们是晨光设计工作室，主要做全屋定制。好的，收到。",
+      "expected_company": "晨光设计工作室",
+      "passed": true,
+      "result": {
+        "company": {
+          "value": "晨光设计工作室",
+          "quote": "你好，我叫陈晓，我们是晨光设计工作室，主要做全屋定制。"
+        },
+        "contact": {
+          "value": "陈晓",
+          "quote": "你好，我叫陈晓，我们是晨光设计工作室，主要做全屋定制。"
+        },
+        "phone": null,
+        "customer_type": {
+          "value": "全屋定制",
+          "quote": "你好，我叫陈晓，我们是晨光设计工作室，主要做全屋定制。"
+        },
+        "confidence": "clear",
+        "reason": "客户明确自报姓名、公司名称及业务类型，语境清晰无歧义",
+        "model": "qwen-plus",
+        "prompt_version": "audio-identity-v1",
+        "prompt_hash": "f82b57a4d286",
+        "source_sha256": "00a1e45ec91f723a41fe434fe9d8c08fc54a0c52cc7713bd6259dbd82de29188",
+        "tokens": 979
+      }
+    },
+    {
+      "case": "仅销售身份",
+      "transcript": "您好，我是酷家乐的小李。您好，我想了解一下软件。您方便介绍公司名称吗？暂时不方便说。",
+      "expected_company": null,
+      "passed": true,
+      "result": {
+        "company": null,
+        "contact": null,
+        "phone": null,
+        "customer_type": null,
+        "confidence": "unknown",
+        "reason": "客户未提供公司名称、联系人、电话或业务类型，且明确表示‘暂时不方便说’，无任何可提取的身份线索",
+        "model": "qwen-plus",
+        "prompt_version": "audio-identity-v1",
+        "prompt_hash": "f82b57a4d286",
+        "source_sha256": "cdde57a2e3b34f829b003c01087d3f887698535f5b3800e151718eccf33cd051",
+        "tokens": 870
+      }
+    },
+    {
+      "case": "否认与第三方",
+      "transcript": "您好，我是酷家乐的小李，请问您是晨光设计的陈晓吗？不是，你打错了，我也不认识陈晓。抱歉打扰了。",
+      "expected_company": null,
+      "passed": true,
+      "result": {
+        "company": null,
+        "contact": null,
+        "phone": null,
+        "customer_type": null,
+        "confidence": "unknown",
+        "reason": "客户否认是‘晨光设计的陈晓’，未提供任何自身身份信息，无公司、联系人、电话或业务类型的有效自述或确认",
+        "model": "qwen-plus",
+        "prompt_version": "audio-identity-v1",
+        "prompt_hash": "f82b57a4d286",
+        "source_sha256": "fb7c149b6223e71e03cf5117f0f58ed6f3175f5f78623d61082075c59fe7928f",
+        "tokens": 885
+      }
+    }
+  ]
+}

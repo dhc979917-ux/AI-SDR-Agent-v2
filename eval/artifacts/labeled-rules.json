@@ -1,0 +1,275 @@
+{
+  "kind": "labeled_set_evaluation",
+  "mode": "rules",
+  "created_at": "2026-10-22T02:54:44+00:00",
+  "dataset_sha256": "c6758f3e79dd4e7f1b563f619a3c099b55ae95ca5c47cd91f6f33bc08bf3fcc0",
+  "count": 4,
+  "passed": 4,
+  "intent_graded_count": 4,
+  "intent_class_metrics": {
+    "high": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "medium": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "low": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "intent_macro_f1": 1.0,
+  "intent_abstained_count": 0,
+  "dnc_graded_count": 4,
+  "dnc_recall": 1.0,
+  "dnc_missed_ids": [],
+  "entity_graded_count": 0,
+  "entity_top1_accuracy": null,
+  "entity_top3_recall": null,
+  "entity_candidate_recall": null,
+  "entity_abstained_count": 0,
+  "field_check_count": 11,
+  "field_coverage": 1.0,
+  "rows": [
+    {
+      "id": "LBL-EX-01",
+      "title": "题目样例 · 木里木外",
+      "data_mode": "synthetic",
+      "expected": {
+        "call_type": "sales",
+        "intent_level": "high",
+        "do_not_contact": false,
+        "entity_name": null,
+        "fields": {
+          "raw_company": "木里木外",
+          "contact_name": "张总",
+          "area": "浙江省杭州市",
+          "phone": "138xxxx1234",
+          "shejishi": null
+        }
+      },
+      "actual": {
+        "intent_level": "high",
+        "do_not_contact": false,
+        "call_type": "sales"
+      },
+      "entity": {
+        "status": "captured",
+        "selected": "木里木外",
+        "candidate_count": 0
+      },
+      "fields": {
+        "raw_company": {
+          "expected": "木里木外",
+          "actual": "木里木外",
+          "match": true
+        },
+        "contact_name": {
+          "expected": "张总",
+          "actual": "张总",
+          "match": true
+        },
+        "area": {
+          "expected": "浙江省杭州市",
+          "actual": "浙江省杭州市",
+          "match": true
+        },
+        "phone": {
+          "expected": "138xxxx1234",
+          "actual": "138xxxx1234",
+          "match": true
+        },
+        "shejishi": {
+          "expected": null,
+          "actual": null,
+          "match": true
+        }
+      },
+      "scores": {
+        "N": 35,
+        "T": 20,
+        "B": 15,
+        "E": 5
+      },
+      "checks": {
+        "processing": true,
+        "intent_level": true,
+        "do_not_contact": true,
+        "field:raw_company": true,
+        "field:contact_name": true,
+        "field:area": true,
+        "field:phone": true,
+        "field:shejishi": true
+      },
+      "passed": true,
+      "elapsed_ms": 41
+    },
+    {
+      "id": "LBL-EX-02",
+      "title": "完整主体 · 明确试用",
+      "data_mode": "synthetic",
+      "expected": {
+        "call_type": "sales",
+        "intent_level": "high",
+        "do_not_contact": false,
+        "entity_name": null,
+        "fields": {
+          "raw_company": "青禾空间设计（杭州）有限公司",
+          "contact_name": "陈宇",
+          "contact_title": "设计总监",
+          "shejishi": 12,
+          "phone": "13800000000",
+          "industry": "全屋定制"
+        }
+      },
+      "actual": {
+        "intent_level": "high",
+        "do_not_contact": false,
+        "call_type": "sales"
+      },
+      "entity": {
+        "status": "captured",
+        "selected": "青禾空间设计（杭州）有限公司",
+        "candidate_count": 0
+      },
+      "fields": {
+        "raw_company": {
+          "expected": "青禾空间设计（杭州）有限公司",
+          "actual": "青禾空间设计（杭州）有限公司",
+          "match": true
+        },
+        "contact_name": {
+          "expected": "陈宇",
+          "actual": "陈宇",
+          "match": true
+        },
+        "contact_title": {
+          "expected": "设计总监",
+          "actual": "设计总监",
+          "match": true
+        },
+        "shejishi": {
+          "expected": 12,
+          "actual": 12,
+          "match": true
+        },
+        "phone": {
+          "expected": "13800000000",
+          "actual": "13800000000",
+          "match": true
+        },
+        "industry": {
+          "expected": "全屋定制",
+          "actual": "全屋定制",
+          "match": true
+        }
+      },
+      "scores": {
+        "N": 35,
+        "T": 25,
+        "B": 15,
+        "E": 20
+      },
+      "checks": {
+        "processing": true,
+        "intent_level": true,
+        "do_not_contact": true,
+        "field:raw_company": true,
+        "field:contact_name": true,
+        "field:contact_title": true,
+        "field:shejishi": true,
+        "field:phone": true,
+        "field:industry": true
+      },
+      "passed": true,
+      "elapsed_ms": 32
+    },
+    {
+      "id": "LBL-EX-03",
+      "title": "随便了解 · 暂无计划",
+      "data_mode": "synthetic",
+      "expected": {
+        "call_type": "sales",
+        "intent_level": "low",
+        "do_not_contact": false,
+        "entity_name": null,
+        "fields": {}
+      },
+      "actual": {
+        "intent_level": "low",
+        "do_not_contact": false,
+        "call_type": "sales"
+      },
+      "entity": {
+        "status": "missing",
+        "selected": null,
+        "candidate_count": 0
+      },
+      "fields": {},
+      "scores": {
+        "N": 15,
+        "T": 0,
+        "B": 0,
+        "E": 0
+      },
+      "checks": {
+        "processing": true,
+        "intent_level": true,
+        "do_not_contact": true
+      },
+      "passed": true,
+      "elapsed_ms": 35
+    },
+    {
+      "id": "LBL-EX-04",
+      "title": "明确拒绝再次联系",
+      "data_mode": "synthetic",
+      "expected": {
+        "call_type": "sales",
+        "intent_level": "low",
+        "do_not_contact": true,
+        "entity_name": null,
+        "fields": {}
+      },
+      "actual": {
+        "intent_level": "low",
+        "do_not_contact": true,
+        "call_type": "sales"
+      },
+      "entity": {
+        "status": "missing",
+        "selected": null,
+        "candidate_count": 0
+      },
+      "fields": {},
+      "scores": {
+        "N": 0,
+        "T": 0,
+        "B": 0,
+        "E": 0
+      },
+      "checks": {
+        "processing": true,
+        "intent_level": true,
+        "do_not_contact": true
+      },
+      "passed": true,
+      "elapsed_ms": 32
+    }
+  ],
+  "limitations": "标注集度量结果依赖标注口径与样本代表性；合成示例行仅演示指标，不代表真实业务准确率。企业抬头指标需要配置企查查（SDR_ENTITY_PROVIDER=auto）后评测；entity_name 为空的用例不参与企业指标。"
+}
